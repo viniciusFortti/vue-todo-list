@@ -28,7 +28,7 @@
                         <p @click="todo.selected = !todo.selected">{{todo.description}}</p>
                 </div>
 
-                <button class="clear" v-if="todos.length"  @click="removeTodo()">Limpar tudo</button>
+                <button class="clear" v-if="todos.length" @click="removeTodo()">Limpar tudo</button>
 
                 <input type="text" placeholder="Escreva uma nova tarefa..." v-model="newTodo.description">
                 <button class="add" @click="addTodo()">Adicionar</button>
